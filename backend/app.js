@@ -2,10 +2,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 const { celebrate, Joi } = require('celebrate');
 const { errors } = require('celebrate');
+const cors = require('cors');
 
 const { createUser, login } = require('./controllers/users');
 const auth = require('./middlewares/auth');
 const error = require('./middlewares/error');
+const { requestLogger, errorLogger } = require('./middlewares/logs');
 const routes = require('./routes');
 const { linkRegex } = require('./utils/constants');
 
@@ -16,6 +18,10 @@ const app = express();
 mongoose.connect('mongodb://localhost:27017/mestodb');
 
 app.use(express.json());
+
+app.use(cors());
+
+app.use(requestLogger);
 
 app.post('/signin', celebrate({
   body: Joi.object().keys({
@@ -36,6 +42,8 @@ app.post('/signup', celebrate({
 app.use(auth);
 
 app.use(routes);
+
+app.use(errorLogger);
 
 app.use(errors());
 app.use(error);
