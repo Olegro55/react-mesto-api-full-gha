@@ -19,7 +19,7 @@ mongoose.connect('mongodb://localhost:27017/mestodb');
 
 app.use(express.json());
 
-app.use(cors());
+app.use(cors({ origin: 'https://laughing-spoon-r445v9qr5xjhwx6x-3000.app.github.dev' }));
 
 app.use(requestLogger);
 
