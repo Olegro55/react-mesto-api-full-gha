@@ -12,7 +12,7 @@ function Register({ onRegistration }) {
     function handleSubmit(event) {
         event.preventDefault();
 
-        onRegistration(values); 
+        onRegistration(values);
     }
 
     return (

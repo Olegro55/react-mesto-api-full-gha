@@ -4,7 +4,7 @@
 
 IP 62.84.118.71
 Frontend https://frontmesto.nomoreparties.co/
-Backend https://frontmesto.nomoreparties.co/
+Backend https://backmesto.nomoreparties.co/
 
 ## Директории
 
