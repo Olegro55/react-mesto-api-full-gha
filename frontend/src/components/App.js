@@ -139,7 +139,7 @@ function App() {
           title: 'Вы успешно зарегистрировались!'
         })
         setInfoTooltipOpen(true);
-        navigate('/sign-in');
+        navigate('/signin');
       })
       .catch((err) => {
         setRegistrationResult({

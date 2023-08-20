@@ -14,13 +14,13 @@ function Header({ email, onLogout }) {
                 />
 
                 <Route
-                    path="/sign-up"
-                    element={<Link to="/sign-in" className="header__link">Войти</Link>}
+                    path="/signup"
+                    element={<Link to="/signin" className="header__link">Войти</Link>}
                 />
 
                 <Route
-                    path="/sign-in"
-                    element={<Link to="/sign-up" className="header__link">Регистрация</Link>}
+                    path="/signin"
+                    element={<Link to="/signup" className="header__link">Регистрация</Link>}
                 />
             </Routes>
         </header>

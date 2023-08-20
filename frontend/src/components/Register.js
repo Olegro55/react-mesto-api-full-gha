@@ -26,7 +26,7 @@ function Register({ onRegistration }) {
                     </fieldset>
                     <button type="submit" aria-label="Войти" className="login__button">Зарегистрироваться</button>
                 </form>
-                <Link className="login__link" to="/sign-in">Уже зарегистрированы? Войти</Link>
+                <Link className="login__link" to="/signin">Уже зарегистрированы? Войти</Link>
             </section>
         </main>
     );
