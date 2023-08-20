@@ -12,11 +12,11 @@ const { requestLogger, errorLogger } = require('./middlewares/logs');
 const routes = require('./routes');
 const { linkRegex } = require('./utils/constants');
 
-const { PORT = 3000, DB_ADDRESS } = process.env;
+const { PORT = 3000 } = process.env;
 
 const app = express();
 
-mongoose.connect(DB_ADDRESS);
+mongoose.connect('mongodb://127.0.0.1:27017/mestodb');
 
 app.use(express.json());
 
