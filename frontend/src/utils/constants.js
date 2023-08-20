@@ -1,5 +1,5 @@
 export const apiConfig = {
-  baseUrl: 'https://localhost:3000',
+  baseUrl: 'https://localhost:3300',
   headers: {
     'Content-Type': 'application/json',
     'Authorization': `Bearer ${ localStorage.getItem("token") }`,
@@ -7,7 +7,7 @@ export const apiConfig = {
 };
 
 export const authConfig = {
-  baseUrl: 'https://localhost:3000',
+  baseUrl: 'https://localhost:3300',
   headers: {
     'Content-Type': 'application/json'
   }
