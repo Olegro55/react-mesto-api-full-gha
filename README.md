@@ -3,7 +3,7 @@
 # react-mesto-api-full
 
 IP 62.84.118.71
-Frontend https://backmesto.nomoreparties.co/
+Frontend https://frontmesto.nomoreparties.co/
 Backend https://frontmesto.nomoreparties.co/
 
 ## Директории
