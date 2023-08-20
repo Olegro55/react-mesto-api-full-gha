@@ -20,7 +20,7 @@ mongoose.connect(DB_ADDRESS);
 
 app.use(express.json());
 
-app.use(cors({ origin: ['https://frontmesto.nomoreparties.co/', 'http://frontmesto.nomoreparties.co/'] }));
+app.use(cors({ origin: 'https://localhost:3000' }));
 
 app.use(requestLogger);
 
