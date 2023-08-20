@@ -47,7 +47,7 @@ function App() {
       auth
         .checkToken(token)
         .then((res) => {
-          setEmail(res.data.email);
+          setEmail(res.email);
           setIsLoggedIn(true);
           navigate("/");
         })
@@ -66,7 +66,7 @@ function App() {
       .catch((err) => {
         console.error(`Ошибка: ${err}`);
       });
-  }, []);
+  }, [isLoggedIn]);
 
   function handleEditProfileClick() { setEditProfilePopupOpen(true) }
   function handleEditAvatarClick() { setEditAvatarPopupOpen(true) }
