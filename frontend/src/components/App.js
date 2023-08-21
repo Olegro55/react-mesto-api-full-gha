@@ -55,7 +55,7 @@ function App() {
           console.error(`Ошибка: ${err}`);
         });
     }
-  }, []);
+  }, [isLoggedIn]);
 
   React.useEffect(() => {
     Promise.all([api.getUserInfo(), api.getInitialCards()])
