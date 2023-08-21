@@ -13,6 +13,7 @@ class Api {
   }
 
   _request(endpoint, options) {
+    options.headers['Authorization'] = `Bearer ${localStorage.getItem("token")}`;
     return fetch(`${this._url}/${endpoint}`, options).then(this._checkResponse);
   }
   

@@ -1,8 +1,7 @@
 export const apiConfig = {
   baseUrl: 'https://backmesto.nomoreparties.co',
   headers: {
-    'Content-Type': 'application/json',
-    'Authorization': `Bearer ${ localStorage.getItem("token") }`,
+    'Content-Type': 'application/json'
   }
 };
 
